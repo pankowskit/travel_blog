@@ -1,11 +1,17 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import PlaceS1 from "../components/place-s1";
+import PlaceS2 from "../components/place-s2";
 
-function Place(){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Place extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj p-0">
+                <PlaceS1/>
+                <PlaceS2/>
+            </Container>    
+        );
+    }
 }
 
 export default Place;
